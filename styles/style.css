@@ -20,19 +20,53 @@ body {
 }
 
 .cabecalho {
-    padding: 2% 0 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 10%;
 }
 
+/* Grupo da Esquerda (Logo + Nome) */
+.cabecalho__brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.cabecalho__logo {
+  width: 100px;
+  height: auto;
+}
+
+.cabecalho__titulo {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--terra-cota);
+}
+
+/* Grupo do Meio (Links) */
 .cabecalho__menu {
-    display: flex;
-    gap: 80px;
-    align-items: center;
+  display: flex;
+  gap: 40px;
+  align-items: center;
 }
 
 .cabecalho__menu__link {
-    font-size: 1.25rem;
-    color: var(--terra-cota);
-    text-decoration: none;
+  font-size: 1.1rem;
+  color: var(--terra-cota);
+  text-decoration: none;
+}
+
+/* Grupo da Direita (Botão Agende) */
+.cabecalho__btn {
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--terra-cota);
+  padding: 10px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .titulo-destaque {
